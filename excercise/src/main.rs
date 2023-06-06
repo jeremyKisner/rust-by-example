@@ -1,3 +1,7 @@
+struct Person {
+    name: String,
+}
+
 fn main() {
     let mut x: i32 = 100;
     print!("{x}");
@@ -10,4 +14,10 @@ fn main() {
         print!(" -> {x}");
     }
     println!();
+
+    let mut p = Person{
+        name: String::from("Jeremy"),
+    };
+
+    println!("{} was here!", p.name);
 }
